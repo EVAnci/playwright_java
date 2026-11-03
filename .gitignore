@@ -1,0 +1,25 @@
+# Maven: compilados y reportes de tests
+/target/
+
+# Configuración local de IDEs
+/.classpath
+/.project
+/.settings/
+/.idea/
+*.iml
+
+# Artefactos de depuración de Playwright (si se guardan fuera de target)
+/test-results/
+/trace.zip
+
+# Sesiones de Playwright: pueden contener cookies y tokens
+/playwright/.auth/
+
+# Variables de entorno locales
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
