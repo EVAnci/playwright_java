@@ -8,7 +8,7 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 public class UmTest {
   @Test
-  void comprobarTitulo() {
+  void comprobarLibro() {
     
     try (Playwright playwright = Playwright.create()) {
       Browser browser = playwright.firefox().launch(
@@ -60,19 +60,19 @@ public class UmTest {
 
       // 8. Hacer clic en Buscar 
       page.locator("#searchsubmit").click();
-      page.waitForTimeout(6000);
-      page.goBack();
-      page.goBack();
+      // page.waitForTimeout(6000);
+      // page.goBack();
+      // page.goBack();
 
-      page.waitForTimeout(2000);
-      page.locator("#searchsubmit").click();
-      page.waitForTimeout(6000);
-      page.goBack();
-      page.goBack();
+      // page.waitForTimeout(2000);
+      // page.locator("#searchsubmit").click();
+      // page.waitForTimeout(6000);
+      // page.goBack();
+      // page.goBack();
 
-      page.waitForTimeout(2000);
-      page.locator("#searchsubmit").click();
-      page.waitForTimeout(6000);
+      // page.waitForTimeout(2000);
+      // page.locator("#searchsubmit").click();
+      // page.waitForTimeout(6000);
       // No se si esta triquiñuela es válida. Lo correcto sería pedir
       // un entorno de prueba sin la validación captcha. Para resolverlo
       // probando encontré que tras 3 intentos se aprueba el captcha.
